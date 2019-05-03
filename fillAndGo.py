@@ -4,8 +4,6 @@ from tkinter import messagebox
 # background and font
 bg = '#4B4B4C'
 f = 'Arial Bold'
-x = 5
-y = 10
 
 
 class FormApp(Tk):
@@ -30,10 +28,6 @@ class FormApp(Tk):
 
     def show_form_frame(self):
         self.show_frame('form')
-
-    def create_text(self, *args, **kw):
-        """Create text with coordinates x1,y1."""
-        return self._create('text', args, kw)
 
 
 class MainScreen(Frame):
