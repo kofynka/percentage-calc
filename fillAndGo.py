@@ -42,11 +42,10 @@ class MainScreen(Frame):
         self.v1 = IntVar()
         self.v2 = IntVar()
         self.v3 = IntVar()
-        self.v4 = StringVar()
 
         # Labels
         Label(frame, text='Sum of Money', font=(f, 12), bd=10, bg=bg, fg='white').grid(row=1, column=0)
-        e1 = Entry(frame, textvariable=self.v1).grid(row=1, column=1, pady=5)
+        Entry(frame, textvariable=self.v1).grid(row=1, column=1, pady=5)
 
         Label(frame, text='Percentage', font=(f, 12), bd=10, bg=bg, fg='white').grid(row=2, column=0)
         Entry(frame, textvariable=self.v2).grid(row=2, column=1, pady=5)
